@@ -1,5 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Sorvete sorvete = new Sorvete.Builder("Baunilha", "Chocolate")
+                .acompanhamento("Waffer")
+                .acompanhamento2("Brigadeiro")
+                .build();
+        sorvete.exibirSorvete();
     }
 }
